@@ -1,0 +1,475 @@
+.blurMoreDetailsCard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  transition: background-color 2s linear;
+}
+
+.style-btn {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+.style-btn:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 2s;
+}
+.centerMoreInfo {
+  justify-content: center;
+}
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  border-radius: 25px;
+  z-index: 10;
+  background-color: #19181a;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 3.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.moreInfo::-webkit-scrollbar {
+  display: none;
+}
+
+.hidden {
+  transition: display 2s linear;
+  display: none;
+}
+
+.showMovie {
+  position: relative;
+}
+
+.closeMovie {
+  position: absolute;
+  pointer-events: all;
+  z-index: 10;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(208, 208, 208, 0.1);
+}
+
+.closeMovie:hover {
+  color: crimson;
+  border: 1px solid crimson;
+  background-color: rgba(33, 33, 33, 0.1);
+}
+
+.closeMovie,
+.closeMovie:hover {
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.closeMovie,
+.mute-button {
+  font-size: 80%;
+}
+
+.closeMovie,
+.closeMovie:hover,
+.mute-button,
+.icon-btn {
+  transition: 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.mute-button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border: transparent solid 1px;
+  color: rgba(255, 255, 255, 0.541);
+  padding: 0.3rem;
+  font-size: 110%;
+}
+.mute-button:hover {
+  color: white;
+}
+.playerWrapper {
+  width: 100%;
+  height: 500px;
+  pointer-events: none;
+}
+
+.fa-caret-right > {
+  position: relative;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  scroll-padding-right: 1.25rem;
+}
+
+.playButtonDetailCard {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 0.5vw;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.playButtonDetailCard:hover {
+  transition: all 1s ease-in-out;
+  color: #000;
+  background-color: #fff;
+}
+
+.icons-container {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 90%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.icons-container,
+.mute-button {
+  z-index: 10;
+}
+
+.icon-btn,
+.playButtonDetailCard {
+  margin-right: 0.6rem;
+}
+
+.icon-btn {
+  pointer-events: all;
+  color: rgba(255, 255, 255, 0.541);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+.icon-btn:hover {
+  color: white;
+  border: 2px solid #fff;
+}
+.icon-plus {
+  color: red;
+}
+.logo-container {
+  position: absolute;
+  bottom: 7rem;
+  left: 2rem;
+}
+
+.more-info-logo {
+  width: 20rem;
+}
+
+.container_movie_info {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  height: 43vh;
+}
+
+.runTime_overview {
+  top: 50%;
+  width: 60%;
+}
+
+.movieJarFile {
+  position: relative;
+  text-align: right;
+  text-justify: auto;
+  width: 43.6vw;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 1.3em;
+  margin-left: 18rem;
+}
+.genresMovies {
+  top: 70%;
+  display: inline-flex;
+  color: rgb(98, 91, 91);
+}
+
+.genresMovies h5 {
+  display: inline-flex;
+  color: silver;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.movieDirector {
+  color: rgb(98, 91, 91);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.movieDirector h5 {
+  display: inline-flex;
+  color: silver;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.playTime {
+  color: rgb(98, 91, 91);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.playTime h5 {
+  display: inline-flex;
+  color: silver;
+  font-weight: bold;
+}
+
+.movieOverview {
+  font-size: 14px;
+  margin-left: 0;
+  color: silver;
+  width: 55%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#player-fs-exit-btn,
+#player-fs-mute-btn,
+#player-fs-play-btn {
+  position: absolute;
+  padding: 1rem;
+  pointer-events: all;
+  background: none;
+  outline: none;
+  border: none;
+  color: grey;
+  font-size: 150%;
+  transition: 1s ease-out;
+}
+
+#player-fs-exit-btn:hover,
+#player-fs-mute-btn:hover,
+#player-fs-play-btn:hover {
+  color: ghostwhite;
+  transition: 1s ease-in;
+}
+
+.p {
+  color: rgba(172, 31, 31, 0.1);
+}
+
+@media only screen and (max-width: 575px) {
+  .movieJarFile {
+    top: 0;
+    margin: 0;
+    width: 85vw;
+    margin-bottom: 1rem;
+  }
+
+  .movieOverview {
+    position: relative;
+    top: 0;
+    left: 5vw;
+    margin-left: 0;
+    width: 75vw;
+    margin-bottom: 1rem;
+  }
+
+  .icons-container {
+    padding: 0.5rem;
+  }
+
+  .icon-btn {
+    font-size: 0.625rem;
+    padding: 0.7rem;
+  }
+
+  .playButtonDetailCard {
+    padding: 0.3rem 1.3rem;
+    font-size: 0.7rem;
+  }
+
+  .icon-btn,
+  .playButtonDetailCard {
+    margin-right: 0.5rem;
+  }
+
+  .mute-button {
+    bottom: 0.5rem;
+    font-size: 70%;
+  }
+
+  .closeMovie {
+    top: 0.5rem;
+    font-size: 70%;
+  }
+
+  .mute-button,
+  .closeMovie {
+    right: 0.5rem;
+  }
+
+  .logo-container {
+    bottom: 5rem;
+  }
+
+  .more-info-logo {
+    width: 15rem;
+  }
+
+  .top-frameborder,
+  .bottom-frameborder {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .moreInfo {
+    width: 550px;
+    margin-left: calc((100vw - 550px) / 2);
+  }
+  .container_movie_info {
+    height: 65vh;
+  }
+  .movieJarFile {
+    width: 30vw;
+  }
+  .movieOverview {
+    margin-left: 4%;
+  }
+  .plus-button {
+    width: 550px;
+    margin-left: 7%;
+  }
+  .thumbsUp {
+    margin-left: -20%;
+  }
+  .thumbsDown {
+    margin-left: 58%;
+  }
+  .mute-button {
+    margin-left: 17rem;
+  }
+  .closeMovie {
+    margin-left: 7rem;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .movieJarFile {
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .movieJarFile {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .movieJarFile {
+    width: 25vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .moreInfo {
+    width: 850px;
+    margin-left: calc((100vw - 850px) / 2);
+  }
+  .movieJarFile {
+    width: 75vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .movieJarFile {
+    width: 60vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .movieJarFile {
+    width: 65vw;
+  }
+  .container_movie_info {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .movieJarFile {
+    width: 60vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .movieJarFile {
+    width: 60vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .movieJarFile {
+    width: 55vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .movieJarFile {
+    width: 50vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .movieJarFile {
+    width: 48vw;
+    margin-left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1820px) {
+  .movieJarFile {
+    width: 43vw;
+    margin-left: 0;
+    right: 0;
+  }
+}

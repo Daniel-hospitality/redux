@@ -1,0 +1,66 @@
+#player-fs-exit-btn,
+#player-fs-mute-btn,
+#player-fs-play-btn {
+  position: absolute;
+  padding: 1rem;
+  pointer-events: all;
+  background: none;
+  outline: none;
+  border: none;
+  color: grey;
+  font-size: 150%;
+  z-index: 10;
+}
+
+#player-fs-exit-btn:hover,
+#player-fs-mute-btn:hover,
+#player-fs-play-btn:hover {
+  color: ghostwhite;
+}
+
+#player-fs-exit-btn,
+#player-fs-mute-btn {
+  left: 1rem;
+}
+
+#player-fs-exit-btn {
+  bottom: 1rem;
+  left: 55%;
+}
+
+#player-fs-mute-btn {
+  bottom: 1rem;
+  left: 50%;
+}
+
+#player-fs-play-btn {
+  bottom: 1rem;
+  left: 45%;
+}
+
+.hidden,
+.hide-border {
+  display: none;
+}
+
+.show,
+.show-border {
+  display: block;
+}
+
+#top-frameborder {
+  top: 0;
+}
+
+#bottom-frameborder {
+  bottom: 0;
+}
+
+#top-frameborder,
+#bottom-frameborder {
+  position: absolute;
+  height: 10.6vh;
+  width: 100%;
+  z-index: 5;
+  background: black;
+}
